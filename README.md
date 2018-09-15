@@ -249,13 +249,37 @@ includes：(判断是否包含然后直接返回布尔值)         repeat: (获�
 
 
 
+ destructuring （解构）
+ 
+    简化数组和对象中信息的提取。
+
+    ES6前，我们一个一个获取对象信息；
+
+    ES6后，解构能让我们从对象或者数组里取出数据存为变量
 
 
+          // ES5
+          var people1 = {
+            name: 'bai',
+            age: 20,
+            color: ['red', 'blue']
+          };
 
+          var myName = people1.name;
+          var myAge = people1.age;
+          var myColor = people1.color[0];
+          console.log(myName + '----' + myAge + '----' + myColor);
 
+          // ES6
+          let people2 = {
+            name: 'ming',
+            age: 20,
+            color: ['red', 'blue']
+          }
 
-
-
+          let { name, age } = people2;
+          let [first, second] = people2.color;
+          console.log(`${name}----${age}----${first}`);
 
 
 
