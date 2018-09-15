@@ -71,6 +71,7 @@ class、extends、super
 
        
    例子1    
+   
                   class Animal {
                     constructor() {
                         this.type = 'animal';
@@ -95,6 +96,7 @@ class、extends、super
 
 
 例子2
+
                     //  父类
                     class Father{
                       constructor(x,y){
