@@ -282,6 +282,26 @@ includes：(判断是否包含然后直接返回布尔值)         repeat: (获�
           console.log(`${name}----${age}----${first}`);
 
 
+default 函数默认参数
+
+
+           // ES5 给函数定义参数默认值
+            function foo(num) {
+              num = num || 200;
+              return num;
+            }
+
+            // ES6
+            function foo(num = 200) {
+              return num;
+            }
+          console.log(foo())  //200
+  
+
+
+
+
+
 
 
 
