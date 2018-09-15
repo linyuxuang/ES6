@@ -213,19 +213,61 @@ class、extends、super
  
    解决了 ES5 在字符串功能上的痛点。
 
-   第一个用途：字符串拼接。将表达式嵌入字符串中进行拼接，用 `` 和 ${}来界定。
+         第一个用途：字符串拼接。将表达式嵌入字符串中进行拼接，用 `` 和 ${}来界定。
  
-            // es5
-            var name1 = "bai";
-            console.log('hello' + name1);
+                    // es5
+                    var name1 = "bai";
+                    console.log('hello' + name1);
 
-          //es6
-            var name="张三";
-            console.log(`我的名字是${name}`) //我的名字是张三
+                  //es6
+                    var name="张三";
+                    console.log(`我的名字是${name}`) //我的名字是张三
+
+            
+         第二个用途：在ES5时我们通过反斜杠来做多行字符串拼接。ES6反引号 `` 直接搞定。
  
- 
- 
- 
+                // es5
+                var msg = "Hi \
+                man!";
+
+                // es6
+                const template = `<div>
+                    <span>hello world</span>
+                </div>`;
+
+
+includes：(判断是否包含然后直接返回布尔值)         repeat: (获取字符串重复n次)
+
+
+              // includes：判断是否包含然后直接返回布尔值
+              let str = 'hahah';
+              console.log(str.includes('y')); // false
+
+              // repeat: 获取字符串重复n次
+              let s = 'he';
+              console.log(s.repeat(3)); // 'hehehe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
