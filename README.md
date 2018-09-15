@@ -209,13 +209,19 @@ class、extends、super
             }
 
  
+ template string （模板字符串）
  
+   解决了 ES5 在字符串功能上的痛点。
+
+   第一个用途：字符串拼接。将表达式嵌入字符串中进行拼接，用 `` 和 ${}来界定。
  
- 
- 
- 
-       
-       
+            // es5
+            var name1 = "bai";
+            console.log('hello' + name1);
+
+          //es6
+            var name="张三";
+            console.log(`我的名字是${name}`) //我的名字是张三
  
  
  
